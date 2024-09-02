@@ -15,7 +15,9 @@ const contactSchema = new mongoose.Schema({
     type: Boolean,
     default: false,
   },
-});
+},
+{ versionKey: false }
+);
 
 const Contact = mongoose.model('Contact', contactSchema);
 
@@ -26,27 +28,3 @@ module.exports = Contact;
 
 
 
-
-
-
-
-
-// // const fs = require('fs/promises')
-
-// const listContacts = async () => {}
-
-// const getContactById = async (contactId) => {}
-
-// const removeContact = async (contactId) => {}
-
-// const addContact = async (body) => {}
-
-// const updateContact = async (contactId, body) => {}
-
-// module.exports = {
-//   listContacts,
-//   getContactById,
-//   removeContact,
-//   addContact,
-//   updateContact,
-// }
