@@ -1,4 +1,4 @@
-const Joi = require("joi");
+import Joi from 'joi';
 
 // Define validation for adding/updating a contact
 const contactValidation = Joi.object({
@@ -12,4 +12,4 @@ const favoriteValidation = Joi.object({
     favorite: Joi.bool().required(),
 });
 
-module.exports = { contactValidation, favoriteValidation };
+export { contactValidation, favoriteValidation };
